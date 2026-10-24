@@ -303,6 +303,7 @@ Used on the resources page to mark maturity without extra components:
 ```
 ├── pages/                 HTML entries (one file = one URL)
 │   ├── index.html
+│   ├── _head.html         Shared inline JS/CSS/link (extension of <head> element)
 │   ├── _header.html       Shared header + nav (inlined)
 │   ├── _footer.html       Shared footer (inlined)
 │   ├── products.html

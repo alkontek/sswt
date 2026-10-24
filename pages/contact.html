@@ -10,30 +10,7 @@
     <meta name="description" content="Example contact page for the simple static website template.">
     <meta name="keywords" content="simple,static,website,template,sswt,contact">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-        try {
-            const theme = localStorage.getItem('theme');
-            if (theme === 'inverse') {
-                document.documentElement.classList.add('inverse');
-            } else if (theme === 'light') {
-                document.documentElement.classList.remove('inverse');
-            }
-            document.documentElement.style.colorScheme =
-                document.documentElement.classList.contains('inverse') ? 'dark' : 'light';
-            const w = localStorage.getItem('siteWidth');
-            if (w === '4xl' || w === '6xl' || w === 'full') {
-                document.documentElement.setAttribute('data-site-width', w);
-            } else {
-                document.documentElement.setAttribute('data-site-width', '6xl');
-            }
-        } catch (_) {
-            document.documentElement.setAttribute('data-site-width', '6xl');
-        }
-    </script>
-    <style>
-        html { background-color: #080808; }
-        html:not(.inverse) { background-color: #ffffff; }
-    </style>
+    <!-- include:_head.html -->
     <link rel="stylesheet" href="/src/styles.css" />
     <script type="module" src="/src/site.js"></script>
     <!-- PROD_ONLY_START -->

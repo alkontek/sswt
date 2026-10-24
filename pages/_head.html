@@ -1,0 +1,27 @@
+<script>
+    try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'inverse') {
+            document.documentElement.classList.add('inverse');
+        } else if (theme === 'light') {
+            document.documentElement.classList.remove('inverse');
+        }
+        document.documentElement.style.colorScheme =
+            document.documentElement.classList.contains('inverse') ? 'dark' : 'light';
+        const w = localStorage.getItem('siteWidth');
+        if (w === '4xl' || w === '6xl' || w === 'full') {
+            document.documentElement.setAttribute('data-site-width', w);
+        } else {
+            document.documentElement.setAttribute('data-site-width', '6xl');
+        }
+    } catch (_) {
+        document.documentElement.setAttribute('data-site-width', '6xl');
+    }
+</script>
+<style>
+    html { background-color: #080808; }
+    html:not(.inverse) { background-color: #ffffff; }
+</style>
+<link rel="preload" href="/font/Oxanium-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/font/Exo2-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/font/OxygenMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
