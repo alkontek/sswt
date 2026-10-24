@@ -152,9 +152,6 @@ h3 {
 /* Container Behaviors */
 .header-behavior {
     @apply py-4 px-4;
-    max-width: var(--site-max-width);
-    width: 100%;
-    margin-inline: auto;
 }
 
 .main-behavior {
@@ -176,15 +173,15 @@ h3 {
 }
 
 /* Content Padding */
-.padded-content-0 {
+@utility padded-content-0 {
     @apply px-0 sm:px-1 md:px-2 lg:px-3;
 }
 
-.padded-content-1 {
+@utility padded-content-1 {
     @apply px-1 sm:px-3 md:px-5 lg:px-8;
 }
 
-.padded-content-2 {
+@utility padded-content-2 {
     @apply px-2 sm:px-4 md:px-7 lg:px-10;
 }
 
@@ -205,7 +202,8 @@ h3 {
 .divider-bar {
     @apply w-16 h-1 mx-auto my-2 rounded-full;
     background-size: 200% 100%;
-    animation: divider-flow 2.4s ease-in-out infinite;
+    background-color: theme.$ink-black;
+    animation: pulse-shadow 1.5s ease-in-out infinite;
 }
 
 .divider-bar-my-4 {
@@ -226,6 +224,22 @@ h3 {
 
 .divider-bar-my-12 {
     @apply my-12;
+}
+
+.divider-bar-w-24 {
+    @apply w-24;
+}
+
+.divider-bar-w-32 {
+    @apply w-32;
+}
+
+.divider-bar-w-48 {
+    @apply w-48;
+}
+
+.divider-bar-w-64 {
+    @apply w-64;
 }
 
 .divider-bar-blue {

@@ -58,8 +58,6 @@
                 A static site foundation with shared layout, token-based theming, and room to grow into fuller UI kits.
             </p>
 
-            <div class="divider-bar"></div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="theme-card border rounded-md p-4 space-y-2">
                     <h2 class="theme-signal-blue text-xl">Starter Kit</h2>
@@ -232,28 +230,87 @@
                 </div>
             </section>
 
-            <section class="text-center">
-                <h2>Status</h2>
-                <div class="divider-bar divider-bar-green" aria-hidden="true"></div>
-                <p>All systems are nominal.</p>
-            </section>
+            <section class="space-y-8">
+                <div class="text-center space-y-2">
+                    <h2 class="theme-ink-black text-2xl">Divider variants</h2>
+                    <p class="neutral-gray-dark">
+                        Base bar, color roles, vertical spacing, and width modifiers.
+                    </p>
+                </div>
 
-            <section class="text-center">
-                <h2>Alerts</h2>
-                <div class="divider-bar divider-bar-red divider-bar-my-4" aria-hidden="true"></div>
-                <p>Review required items below.</p>
-            </section>
+                <div class="theme-card border rounded-md p-4 space-y-3 text-center">
+                    <h3 class="theme-ink-black text-lg">Base</h3>
+                    <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar</code></p>
+                    <div class="divider-bar" aria-hidden="true"></div>
+                </div>
 
-            <section class="text-center">
-                <h2>Signals</h2>
-                <div class="divider-bar divider-bar-blue divider-bar-my-6" aria-hidden="true"></div>
-                <p>Live feed and updates.</p>
-            </section>
+                <div class="theme-card border rounded-md p-4 space-y-4 text-center">
+                    <h3 class="theme-ink-black text-lg">Color variants</h3>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-green</code></p>
+                        <div class="divider-bar divider-bar-green" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-red</code></p>
+                        <div class="divider-bar divider-bar-red" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-blue</code></p>
+                        <div class="divider-bar divider-bar-blue" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-white</code></p>
+                        <div class="divider-bar divider-bar-white" aria-hidden="true"></div>
+                    </div>
+                </div>
 
-            <section class="text-center">
-                <h2>Generic</h2>
-                <div class="divider-bar divider-bar-white divider-bar-my-8" aria-hidden="true"></div>
-                <p>A generic divider.</p>
+                <div class="theme-card border rounded-md p-4 space-y-4 text-center">
+                    <h3 class="theme-ink-black text-lg">Margin variants</h3>
+                    <div>
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-my-4</code></p>
+                        <div class="divider-bar divider-bar-my-4" aria-hidden="true"></div>
+                    </div>
+                    <div>
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-my-6</code></p>
+                        <div class="divider-bar divider-bar-my-6" aria-hidden="true"></div>
+                    </div>
+                    <div>
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-my-8</code></p>
+                        <div class="divider-bar divider-bar-my-8" aria-hidden="true"></div>
+                    </div>
+                    <div>
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-my-10</code></p>
+                        <div class="divider-bar divider-bar-my-10" aria-hidden="true"></div>
+                    </div>
+                    <div>
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-my-12</code></p>
+                        <div class="divider-bar divider-bar-my-12" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <div class="theme-card border rounded-md p-4 space-y-4 text-center">
+                    <h3 class="theme-ink-black text-lg">Width variants</h3>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar</code> (default w-16)</p>
+                        <div class="divider-bar" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-w-24</code></p>
+                        <div class="divider-bar divider-bar-w-24" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-w-32</code></p>
+                        <div class="divider-bar divider-bar-w-32" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-w-48</code></p>
+                        <div class="divider-bar divider-bar-w-48" aria-hidden="true"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-sm neutral-gray-dark"><code class="text-sm">divider-bar divider-bar-w-64</code></p>
+                        <div class="divider-bar divider-bar-w-64" aria-hidden="true"></div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
