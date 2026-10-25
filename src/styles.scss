@@ -40,10 +40,19 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Oxygen Mono';
+    src: url('/font/OxygenMono-Regular.ttf') format('truetype');
+    font-display: block;
+    font-weight: 400;
+    font-style: normal;
+}
+
 @theme {
     --font-oxanium: 'Oxanium', sans-serif;
     --font-space-grotesk: 'Space Grotesk', sans-serif;
     --font-exo-2: 'Exo 2', sans-serif;
+    --font-oxygen-mono: 'Oxygen Mono', ui-monospace, monospace;
 }
 
 /* Site content width: 4xl | 6xl (default) | full */
